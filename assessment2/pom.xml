@@ -54,6 +54,14 @@
     <artifactId>poi-excelant</artifactId>
     <version>3.17</version>
 </dependency>
+
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>4.0.6</version>
+</dependency>
+
   
   </dependencies>
 </project>

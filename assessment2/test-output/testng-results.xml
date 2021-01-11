@@ -5,27 +5,27 @@
       <![CDATA[product deleted successfully....]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="119228" started-at="2021-01-04T20:34:38 IST" finished-at="2021-01-04T20:36:37 IST">
+  <suite name="Default suite" duration-ms="80489" started-at="2021-01-11T16:15:35 IST" finished-at="2021-01-11T16:16:56 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="119228" started-at="2021-01-04T20:34:38 IST" finished-at="2021-01-04T20:36:37 IST">
-      <class name="testscripts.DeleteProduct">
-        <test-method status="PASS" signature="lanchAndStartApplication()[pri:0, instance:testscripts.DeleteProduct@5faeada1]" name="lanchAndStartApplication" is-config="true" duration-ms="18338" started-at="2021-01-04T20:34:38 IST" finished-at="2021-01-04T20:34:56 IST">
+    <test name="Default test" duration-ms="80489" started-at="2021-01-11T16:15:35 IST" finished-at="2021-01-11T16:16:56 IST">
+      <class name="testscripts.TestDeleteProduct">
+        <test-method status="PASS" signature="lanchAndStartApplication()[pri:0, instance:testscripts.TestDeleteProduct@5faeada1]" name="lanchAndStartApplication" is-config="true" duration-ms="16155" started-at="2021-01-11T16:15:35 IST" finished-at="2021-01-11T16:15:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lanchAndStartApplication -->
-        <test-method status="PASS" signature="delete()[pri:0, instance:testscripts.DeleteProduct@5faeada1]" name="delete" duration-ms="99151" started-at="2021-01-04T20:34:56 IST" finished-at="2021-01-04T20:36:35 IST">
+        <test-method status="PASS" signature="delete()[pri:0, instance:testscripts.TestDeleteProduct@5faeada1]" name="delete" duration-ms="62263" started-at="2021-01-11T16:15:51 IST" finished-at="2021-01-11T16:16:54 IST">
           <reporter-output>
             <line>
               <![CDATA[product deleted successfully....]]>
             </line>
           </reporter-output>
         </test-method> <!-- delete -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:testscripts.DeleteProduct@5faeada1]" name="closeApplication" is-config="true" duration-ms="1696" started-at="2021-01-04T20:36:35 IST" finished-at="2021-01-04T20:36:37 IST">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:testscripts.TestDeleteProduct@5faeada1]" name="closeApplication" is-config="true" duration-ms="2024" started-at="2021-01-11T16:16:54 IST" finished-at="2021-01-11T16:16:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- testscripts.DeleteProduct -->
+      </class> <!-- testscripts.TestDeleteProduct -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
