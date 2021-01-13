@@ -2,8 +2,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test name="Test">
+  <listeners>
+	<listener class-name="library.BaseTest"></listener>
+</listeners>
     <classes>
-     <class name="testscripts.TestLogin"/>
+      <class name="testscripts.TestLogin"/>
       <class name="testscripts.TestAddToCart"/>
       <class name="testscripts.TestDeleteProduct"/>
     </classes>

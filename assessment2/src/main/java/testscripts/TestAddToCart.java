@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
 import library.BaseTest;
 import pageobject.AddToCartPage;
 
@@ -31,10 +33,11 @@ public class TestAddToCart extends BaseTest
 		    WebElement addtocart = driver.findElement(By.id("add-to-cart-button"));
 		    addtocart.click();
 			Reporter.log("product added into cart successfully....",true);
+			extentTest.get().log(Status.PASS, "Test Method Successful");
 		}
 		catch (Exception e) 
 		{
-			
+			//extenttest.log(Status.FAIL, "Test Method failed");
 		}
 	}
 }

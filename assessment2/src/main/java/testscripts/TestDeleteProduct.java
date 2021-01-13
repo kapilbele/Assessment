@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
 import library.BaseTest;
 import pageobject.AddToCartPage;
 
@@ -45,11 +47,12 @@ public class TestDeleteProduct extends BaseTest
 		   deletebutton.click();
 		   Thread.sleep(5000);
 		   Reporter.log("product deleted successfully....",true);
-		   
+			extentTest.get().log(Status.PASS, "Test Method Successful");
 		} 
 		catch (Exception e) 
 		{
 			System.out.println(e.getStackTrace());
+			//extenttest.log(Status.FAIL, "Test Method failed");
 		}
 	}
 }

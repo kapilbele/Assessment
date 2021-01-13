@@ -1,31 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
+    <line>
+      <![CDATA[logged in successfully.....]]>
+    </line>
+    <line>
+      <![CDATA[product added into cart successfully....]]>
+    </line>
     <line>
       <![CDATA[product deleted successfully....]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="80489" started-at="2021-01-11T16:15:35 IST" finished-at="2021-01-11T16:16:56 IST">
+  <suite name="Suite" duration-ms="140079" started-at="2021-01-13T12:45:34 IST" finished-at="2021-01-13T12:47:54 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="80489" started-at="2021-01-11T16:15:35 IST" finished-at="2021-01-11T16:16:56 IST">
-      <class name="testscripts.TestDeleteProduct">
-        <test-method status="PASS" signature="lanchAndStartApplication()[pri:0, instance:testscripts.TestDeleteProduct@5faeada1]" name="lanchAndStartApplication" is-config="true" duration-ms="16155" started-at="2021-01-11T16:15:35 IST" finished-at="2021-01-11T16:15:51 IST">
+    <test name="Test" duration-ms="140079" started-at="2021-01-13T12:45:34 IST" finished-at="2021-01-13T12:47:54 IST">
+      <class name="testscripts.TestLogin">
+        <test-method status="PASS" signature="lanchAndStartApplication()[pri:0, instance:testscripts.TestLogin@23bb8443]" name="lanchAndStartApplication" is-config="true" duration-ms="16238" started-at="2021-01-13T12:45:34 IST" finished-at="2021-01-13T12:45:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lanchAndStartApplication -->
-        <test-method status="PASS" signature="delete()[pri:0, instance:testscripts.TestDeleteProduct@5faeada1]" name="delete" duration-ms="62263" started-at="2021-01-11T16:15:51 IST" finished-at="2021-01-11T16:16:54 IST">
+        <test-method status="PASS" signature="amazonlogin()[pri:0, instance:testscripts.TestLogin@23bb8443]" name="amazonlogin" duration-ms="4889" started-at="2021-01-13T12:45:50 IST" finished-at="2021-01-13T12:45:55 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[logged in successfully.....]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- amazonlogin -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:testscripts.TestLogin@23bb8443]" name="closeApplication" is-config="true" duration-ms="2751" started-at="2021-01-13T12:45:55 IST" finished-at="2021-01-13T12:45:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- testscripts.TestLogin -->
+      <class name="testscripts.TestAddToCart">
+        <test-method status="PASS" signature="lanchAndStartApplication()[pri:0, instance:testscripts.TestAddToCart@1176dcec]" name="lanchAndStartApplication" is-config="true" duration-ms="12120" started-at="2021-01-13T12:45:58 IST" finished-at="2021-01-13T12:46:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lanchAndStartApplication -->
+        <test-method status="PASS" signature="addtocartmethod()[pri:0, instance:testscripts.TestAddToCart@1176dcec]" name="addtocartmethod" duration-ms="26505" started-at="2021-01-13T12:46:10 IST" finished-at="2021-01-13T12:46:36 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[product added into cart successfully....]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addtocartmethod -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:testscripts.TestAddToCart@1176dcec]" name="closeApplication" is-config="true" duration-ms="2080" started-at="2021-01-13T12:46:36 IST" finished-at="2021-01-13T12:46:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- testscripts.TestAddToCart -->
+      <class name="testscripts.TestDeleteProduct">
+        <test-method status="PASS" signature="lanchAndStartApplication()[pri:0, instance:testscripts.TestDeleteProduct@120d6fe6]" name="lanchAndStartApplication" is-config="true" duration-ms="25651" started-at="2021-01-13T12:46:38 IST" finished-at="2021-01-13T12:47:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lanchAndStartApplication -->
+        <test-method status="PASS" signature="delete()[pri:0, instance:testscripts.TestDeleteProduct@120d6fe6]" name="delete" duration-ms="47750" started-at="2021-01-13T12:47:04 IST" finished-at="2021-01-13T12:47:52 IST">
           <reporter-output>
             <line>
               <![CDATA[product deleted successfully....]]>
             </line>
           </reporter-output>
         </test-method> <!-- delete -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:testscripts.TestDeleteProduct@5faeada1]" name="closeApplication" is-config="true" duration-ms="2024" started-at="2021-01-11T16:16:54 IST" finished-at="2021-01-11T16:16:56 IST">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:testscripts.TestDeleteProduct@120d6fe6]" name="closeApplication" is-config="true" duration-ms="2025" started-at="2021-01-13T12:47:52 IST" finished-at="2021-01-13T12:47:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
       </class> <!-- testscripts.TestDeleteProduct -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

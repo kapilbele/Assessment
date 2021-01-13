@@ -6,6 +6,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
 import library.BaseTest;
 import pageobject.AmazonResultPage;
 import pageobject.AmazonSearchPage;
@@ -15,8 +17,9 @@ public class TestLogin extends BaseTest
 	@Test() 
 	public void amazonlogin()
 	{
+		
 		try
-		{
+		{ 
 			AmazonSearchPage asp = new AmazonSearchPage(driver);
 			//asp.searchlink().click();
 			Actions action = new Actions(driver);
@@ -33,9 +36,11 @@ public class TestLogin extends BaseTest
 			arp.password().sendKeys(password);
 			arp.loginbutton().click();
 			Reporter.log("logged in successfully.....",true);
+			extentTest.get().log(Status.PASS, "Test Method Successful");
 		}
 		catch (Exception e) 
 		{
+			//extenttest.log(Status.FAIL, "Test Method failed");
 			//Reporter.log("login fail.....",true);
 			//Assert.fail();
 		}
